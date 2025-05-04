@@ -38,8 +38,8 @@ print("Selected game:", selected_game)
 # Base directory for images
 games = {
     "KOF XIII": {
-        "window_name": "The King Of Fighters XIII",
-        "process_name": "kofxiii.exe",
+        "window_name": "THE KING OF FIGHTER XIII GLOBAL MATCH",
+        "process_name": "game.exe",
         "start_image": resource_path("images/KOF_XIII/start-image.png"), # TODO - Account for quick rematches
         "stop_images": [
             resource_path("images/KOF_XIII/stop-image.png"),  
