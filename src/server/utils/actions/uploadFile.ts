@@ -26,7 +26,6 @@ export async function uploadFile(filePath: string) {
     formData.append('currentGame', currentGame);
     formData.append('currentUser', currentUser);
     formData.append('visibility', visibility);
-    console.log(`This is the current platform ${currentPlatform}`);
     formData.append('platform', currentPlatform);
     formData.append('replay', dataStream, fileName);
 
@@ -35,7 +34,7 @@ export async function uploadFile(filePath: string) {
 
     // Send the request with axios
     const response = await axios.post(
-      `${endpointURL}/api/recieve-video`,
+      `${endpointURL}/api/v1/recieve-video`,
       formData,
       {
         headers: {
